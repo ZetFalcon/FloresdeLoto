@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,135 @@
     <style>
         /* Ajustes generales para el fondo de la página */
         body {
+            margin: 0;
+            padding: 20px 0;
+            background-image: url('../fondo.jpeg'); /* Cambia 'fondo.jpeg' por tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor de las imágenes */
+        .photo-strip {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
-            padding: 0;
+            max-width: 90%; /* Limitar ancho máximo en pantallas grandes */
+            width: 100%;
+        }
+
+        /* Estilos para las imágenes */
+        .photo-strip img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Asegurar que la última imagen no tenga margen inferior */
+        .photo-strip img:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Estilos para el texto */
+        #caption {
+            font-size: 1.2em; /* Tamaño de texto relativo para pantallas pequeñas */
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, #6a0dad, #4b0082);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 90%; /* Limitar el ancho en pantallas grandes */
+        }
+
+        /* Estilos para el reproductor de Spotify */
+        iframe {
+            margin-top: 20px;
+            border: none;
+            width: 100%; /* Ajuste para que ocupe el ancho completo en móviles */
+            max-width: 350px; /* Ancho máximo en pantallas grandes */
+            height: 80px; /* Ajusta el tamaño del reproductor */
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .photo-strip img {
+                max-width: 90%; /* Asegura que las imágenes se ajusten en móviles */
+            }
+
+            #caption {
+                font-size: 1em; /* Disminuye el tamaño de la fuente en móviles */
+                padding: 8px 15px; /* Ajusta el padding en móviles */
+            }
+
+            iframe {
+                max-width: 90%; /* Asegura que el reproductor de Spotify no se desborde */
+            }
+        }
+
+        /* Media query para pantallas más pequeñas aún (teléfonos pequeños) */
+        @media (max-width: 480px) {
+            #caption {
+                font-size: 0.9em; /* Disminuye aún más el tamaño del texto en pantallas muy pequeñas */
+            }
+
+            .photo-strip img {
+                max-width: 85%; /* Ajusta las imágenes para pantallas pequeñas */
+            }
+
+            iframe {
+                height: 60px; /* Reducir tamaño del reproductor en teléfonos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor de las imágenes -->
+    <div class="photo-strip">
+        <img src="foto.jpeg" alt="Imagen 1"> <!-- Cambia 'foto.jpeg' por tu imagen -->
+        <img src="foto2.jpeg" alt="Imagen 2"> <!-- Cambia 'foto2.jpeg' por tu imagen -->
+    </div>
+
+    <!-- Texto debajo de la imagen -->
+    <div id="caption">
+        La primera foto tiene que ser esta. En donde salimos a ver juntos la última película de Doctor Strange, la cuál decidiste venir a verla conmigo a pesar de que ya la habías visto.
+        Para mi esta noche fue muy especial, porque no llevabamos saliendo hace mucho, pero yo ya podía sentir las chispas en el aire, incluso más cuando decidimos besarnos y sacarnos nuestra primera foto asi.
+        Sinceramente este fue un momento muy mágico, el cuál lo tengo plasmado en mi cabeza hasta el día de hoy.
+        Mi vida empezó a sonar como la canción de abajo cada vez que te besaba.
+    </div>
+
+    <!-- Spotify Embed Player -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4lCv7b86sLynZbXhfScfm2?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de Loto 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        /* Ajustes generales para el fondo de la página */
+        body {
+            margin: 0;
+            padding: 20px 0;
             background-image: url('../fondo.jpeg'); /* Cambia 'fondo.jpg' por tu imagen de fondo */
             background-size: cover;
             background-position: center;
@@ -40,6 +167,7 @@
             background-color: white;
             border-radius: 20px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
         /* Estilos para las imágenes */
