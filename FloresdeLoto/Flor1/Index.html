@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de Loto 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        /* Ajustes generales para el fondo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('../Fondo.jpeg'); /* Cambia 'fondo.jpg' por tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Estilos para la imagen central */
+        #central-image {
+            max-width: 60%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilos para el texto */
+        #caption {
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilos para el reproductor de Spotify */
+        iframe {
+            margin-top: 20px;
+            border: none;
+            width: 300px;
+            height: 80px; /* Ajusta el tamaño del reproductor */
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen central -->
+    <img id="central-image" src="Foto.jpeg" alt="Imagen central"> <!-- Cambia 'foto.jpg' por tu imagen -->
+    <img id="central-image" src="Foto2.jpeg" alt="Imagen central"> <!-- Cambia 'foto.jpg' por tu imagen -->
+
+
+    <!-- Texto debajo de la imagen -->
+    <div id="caption">
+        La primera foto tiene que ser esta. En donde salimos a ver juntos la última película de Doctor Strange, la cuál decidiste venir a verla conmigo a pesar de que ya la habías visto.
+        Para mi esta noche fue muy especial, porque no llevabamos saliendo hace mucho, pero yo ya podía sentir las chispas en el aire, incluso más cuando decidimos besarnos y sacarnos nuestra primera foto asi.
+        Sinceramente este fue un momento muy mágico, el cuál lo tengo plasmado en mi cabeza hasta el día de hoy.
+        Mi vida empezó a sonar como la canción de abajo cada vez que te besaba.
+    </div>
+
+    <!-- Spotify Embed Player -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4lCv7b86sLynZbXhfScfm2?utm_source=generator" width="100%" height="352"
+     frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+</body>
+</html>
