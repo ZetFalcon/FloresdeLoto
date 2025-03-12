@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de Loto 8</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        /* Ajustes generales para el fondo de la página */
+        body {
+            margin: 0;
+            padding: 20px 0;
+            background-image: url('../fondo.jpeg'); /* Cambia 'fondo.jpeg' por tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor de las imágenes */
+        .photo-strip {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            max-width: 90%; /* Limitar ancho máximo en pantallas grandes */
+            width: 100%;
+        }
+
+        /* Estilos para las imágenes */
+        .photo-strip img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Asegurar que la última imagen no tenga margen inferior */
+        .photo-strip img:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Estilos para el texto */
+        #caption {
+            font-size: 1.2em; /* Tamaño de texto relativo para pantallas pequeñas */
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, #6a0dad, #4b0082);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 90%; /* Limitar el ancho en pantallas grandes */
+        }
+
+        /* Estilos para el reproductor de Spotify */
+        iframe {
+            margin-top: 20px;
+            border: none;
+            width: 100%; /* Ajuste para que ocupe el ancho completo en móviles */
+            max-width: 350px; /* Ancho máximo en pantallas grandes */
+            height: 80px; /* Ajusta el tamaño del reproductor */
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .photo-strip img {
+                max-width: 90%; /* Asegura que las imágenes se ajusten en móviles */
+            }
+
+            #caption {
+                font-size: 1em; /* Disminuye el tamaño de la fuente en móviles */
+                padding: 8px 15px; /* Ajusta el padding en móviles */
+            }
+
+            iframe {
+                max-width: 90%; /* Asegura que el reproductor de Spotify no se desborde */
+            }
+        }
+
+        /* Media query para pantallas más pequeñas aún (teléfonos pequeños) */
+        @media (max-width: 480px) {
+            #caption {
+                font-size: 0.9em; /* Disminuye aún más el tamaño del texto en pantallas muy pequeñas */
+            }
+
+            .photo-strip img {
+                max-width: 85%; /* Ajusta las imágenes para pantallas pequeñas */
+            }
+
+            iframe {
+                height: 60px; /* Reducir tamaño del reproductor en teléfonos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor de las imágenes -->
+    <div class="photo-strip">
+        <img src="foto.jpeg" alt="Imagen 1"> <!-- Cambia 'foto.jpeg' por tu imagen -->
+    </div>
+
+    <!-- Texto debajo de la imagen -->
+    <div id="caption">
+        Debo disculparme de ante mano por esto, pero esta flor, será bastante triste ciertamente. 
+        ¿Recuerdas este día Sofia? Fue el primer y único día donde fuimos todos a la casa de Luz María, donde mis tíos pudieron visitarla y conocerla.
+        Esta foto, es demasiado especial, ya que es la última foto que tenemos toda la familia con Luz María, antes de lo que ha ocurrido, y, en esta foto,
+        también estás tú, también estas formando parte de la familia, de ese hermoso momento donde Luz María fue tan pero tan feliz de recibirnos a todos en su casa y compartir con nosotros.
+        Te agradezco que seas parte de esta foto, te agradezco de que hayas sido parte de mi familia, agradezco que en este último recuerdo de ella, tú aparezcas, gracias por haber estado conmigo ahí,
+        gracias por haber compartido conmigo. Seguramente, ver esta foto te traerá un montón de emociones, por ese motivo me he disculpado al inicio. 
+        No voy a extender este recuerdo mucho más sin que terminemos en un mar de lagrimas ambos. 
+        Nuevamente, gracias por haber estado en este último recuerdo de Luz María feliz, la hiciste muy feliz a ella y a mi.
+        Esta canción es para recordar que ella está con nosotros aún. 
+    </div>
+
+    <!-- Spotify Embed Player -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5ES4bCGHV7oBbxwBkERvwz?utm_source=generator" 
+        width="100%" height="352" frameBorder="0" allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+</body>
+</html>
